@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Guess the color!</title>
+</head>
+
+<body>
+  <div class="content">
+    <p class="tittle">Guess the color!</p>
+
+    <!-- Color box -->
+    <div class="color-box-container">
+      <p>Random color</p>
+      <p>Your guess</p>
+      <div id="randomColor" class="color-box"></div>
+      <div id="yourGuess" class="color-box"></div>
+    </div>
+
+    <!-- Sliders -->
+    <div class="sliders-container">
+      <p>Red:</p>
+      <p class="min">0</p>
+      <button id="subtract-red" class="subtract-button">-</button>
+      <div>
+        <input type="range" min="0" max="100" value="50" id="red-slider">
+      </div>
+      <button id="add-red" class="add-button">+</button>
+      <p>255</p>
+      <p>|</p>
+      <p id="red-color">0</p>
+
+      <p>Green:</p>
+      <p class="min">0</p>
+      <button id="subtract-green" class="subtract-button">-</button>
+      <div>
+        <input type="range" min="0" max="100" value="50" id="green-slider">
+      </div>
+      <button id="add-green" class="add-button">+</button>
+      <p>255</p>
+      <p>|</p>
+      <p id="green-color">0</p>
+
+      <p>Blue:</p>
+      <p class="min">0</p>
+      <button id="subtract-blue" class="subtract-button">-</button>
+      <div>
+        <input type="range" min="0" max="100" value="50" id="blue-slider">
+      </div>
+      <button id="add-blue" class="add-button">+</button>
+      <p>255</p>
+      <p>|</p>
+      <p id="blue-color">0</p>
+    </div>
+
+    <button id="guess-button" class="guess-button">Guess!</button>
+
+    <div class="score">
+      <p>Score:</p>
+      <p id="my-score"></p>
+    </div>
+
+    <button class="next-button">Next!</button>
+  </div>
+</body>
+
+</html>

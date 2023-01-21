@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.content {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.color-box-container {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-top: 50px;
+}
+
+.color-box {
+  width: 350px;
+  height: 200px;
+  background-color: lightgrey;
+}
+
+/* sliders */
+.sliders-container {
+  display: grid;
+  width: 600px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.min {
+  justify-self: center;
+}
+
+.subtract-button {
+  padding: 0;
+  width: 20px;
+  justify-self: end;
+}
+
+.add-button {
+  padding: 0;
+  width: 20px;
+  justify-self: start;
+}
+
+/* Score */
+.score {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Misc */
+.guess-button {
+  margin-top: 20px;
+}
+
+.next-button {
+  margin-top: 20px;
+}
